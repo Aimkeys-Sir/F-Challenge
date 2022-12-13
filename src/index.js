@@ -22,19 +22,27 @@ fetch(baseUrl)
 
 function displayMovieTitles(arrayOfMovies)
 {
-    arrayOfMovies.forEach(movie=>{
+    arrayOfMovies.forEach((movie,i)=>{
+        
         const li=document.createElement("li")
         li.className="film-item"
         li.innerText=movie.title
         li.style.cursor="cursor: pointer"
         movieList.append(li)
+        if(i==0){
+            li.classList.add('film-active')
+        }
         li.addEventListener('click',()=>{
             displayMovieInfo(movie)
+            const activeLi= document.querySelector('.film-active')
+            activeLi.classList.remove('film-active')
+            li.classList.add("film-active")
         })
     })
 }
 function displayMovieInfo(movie)
 {
+
     poster.src=movie.image
     title.innerText=movie.title
     runtime.innerText=movie.runtime + " minutes"

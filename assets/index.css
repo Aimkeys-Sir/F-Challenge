@@ -26,8 +26,24 @@ body{
 }
 .film-item{
     cursor: pointer;
-    
+    background: #7c8ea7;
+    margin: 4px;
+    color: white;
+    padding: 5px;
 }
+.film-item:hover{
+    background-color: #ee6d4db6;
+}
+
+.film-active{
+ background: #EE6C4D;
+ font-weight: 500;
+}
+.film-active:hover{
+ background: #EE6C4D;
+ font-weight: 500;
+}
+
 .lists{
     list-style-type: none;
 }
