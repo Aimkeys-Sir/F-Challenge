@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     background: #E0FBFC;
+    font-family: "Noto Sans", sans-serif;
 }
 .items img{
     height: 35px;
@@ -22,4 +23,72 @@ body{
 .content{
     font-size: 24px;
     font-weight: 600;
+}
+.film-item{
+    cursor: pointer;
+    
+}
+.lists{
+    list-style-type: none;
+}
+.container{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.poster-div, .showing, .movie-list{
+    width: 30%;
+    margin: 10px 40px;
+}
+#poster{
+    height: 80vh;
+}
+#film-info{
+    font-size: 16px;
+    font-weight: 400;
+}
+#showime{
+    font-size: 16px;
+    font-weight: 400;
+}
+.card{
+    border-radius: 10px;
+    background-color: #98C1D9;
+}
+.card-title{
+    color: white;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0 ;
+    padding: 10px;
+    background-color:#3D5A80 ;
+}
+.card-content{
+    padding: 20px;
+}
+.extra-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#showtime{
+   font-weight: 600;
+}
+.spans-div{
+    margin-top: 20px;
+}
+
+.button-64{
+    color: white;
+    background:#293241 ;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 120px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 5px;
+}
+.button-64:hover{
+    background-color:#EE6C4D ;
 }

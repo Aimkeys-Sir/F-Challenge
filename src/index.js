@@ -24,7 +24,7 @@ function displayMovieTitles(arrayOfMovies)
 {
     arrayOfMovies.forEach(movie=>{
         const li=document.createElement("li")
-        li.className="film item"
+        li.className="film-item"
         li.innerText=movie.title
         li.style.cursor="cursor: pointer"
         movieList.append(li)
@@ -35,7 +35,7 @@ function displayMovieTitles(arrayOfMovies)
 }
 function displayMovieInfo(movie)
 {
-    poster.src=movie.poster
+    poster.src=movie.image
     title.innerText=movie.title
     runtime.innerText=movie.runtime + " minutes"
     showtime.innerText=movie.showtime

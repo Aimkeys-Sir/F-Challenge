@@ -20,29 +20,35 @@
 
         </div>
     </div>
-    <div>
+    <div class="container">
         <div class="movies-list">
             <ul class="lists" id="films">
             </ul>
         </div>
 
-        <div class="four wide column">
-            <img id="poster" src="assets/placeholderImage.png" alt="[TITLE]" />
+        <div class="poster-div">
+            <img id="poster" alt="poster" />
         </div>
 
         <div id="showing">
             <div class="card">
-                <div id="title"></div>
-                <div id="runtime"></div>
-                <div class="content">
+                <div class="card-title">
+                    <div id="title"></div>
+                    <div id="runtime"></div>
+                </div>
+
+                <div class="card-content">
                     <div class="description">
                         <div id="film-info"></div>
-                        <span id="showtime"></span>
-                        <span id="ticket-num"></span>
+                        <div class="spans-div">
+                            <span id="showtime"></span>
+                            <span id="ticket-num"></span>
+                        </div>
+
                     </div>
                 </div>
-                <div class="extra content">
-                    <button id="buy-ticket">
+                <div class="extra-content">
+                    <button id="buy-ticket" class="button-64">
                         Buy Ticket
                     </button>
                 </div>
